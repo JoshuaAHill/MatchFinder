@@ -1,7 +1,9 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.lang.*;
 
+/**
+ * This class Creates a number of people (must be more than 2) and then matches each one with another so that there are no repeats. This version has been customised for a secret santa draw.
+ */
 public class Match {
 
     ArrayList<Person> list = new ArrayList<Person>();
@@ -13,8 +15,9 @@ public class Match {
     }
 
     public void start() {
-        int numberOfPeople = 7;
+        int numberOfPeople = 7; //Enter the number of people to be matched
         int complete = 0;
+        //create People here
         Person mary = new Person("Mary", list);
         Person adam = new Person("Adam", list);
         Person jarl = new Person("Jarl", list);
@@ -23,6 +26,7 @@ public class Match {
         Person manny = new Person("Manny", list);
         Person julie = new Person("Julie", list);
 
+        //matching algorithm
         while(complete < numberOfPeople) {
             int x = (int)Math.round(Math.random() * 6);
             int y = (int)Math.round(Math.random() * 6);
