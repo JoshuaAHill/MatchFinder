@@ -13,19 +13,17 @@ public class Match {
     }
 
     public void start() {
-
-        Person josh = new Person("Josh");
-        Person ethan = new Person("Ethan");
-        Person abs = new Person("Abs");
-        Person chloe = new Person("Chloe");
-        Person ellie = new Person("Ellie");
-        Person james = new Person("James");
-        Person hannah = new Person("Hannah");
-
-        list.add(josh);list.add(ethan);list.add(abs);list.add(chloe);list.add(ellie);list.add(james);list.add(hannah);
-
+        int numberOfPeople = 7;
         int complete = 0;
-        while(complete < 6) {
+        Person mary = new Person("Mary", list);
+        Person adam = new Person("Adam", list);
+        Person jarl = new Person("Jarl", list);
+        Person sarah = new Person("Sarah", list);
+        Person dave = new Person("Dave", list);
+        Person manny = new Person("Manny", list);
+        Person julie = new Person("Julie", list);
+
+        while(complete < numberOfPeople) {
             int x = (int)Math.round(Math.random() * 6);
             int y = (int)Math.round(Math.random() * 6);
 

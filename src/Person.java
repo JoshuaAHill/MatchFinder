@@ -1,11 +1,14 @@
+import java.util.ArrayList;
+
 public class Person {
 
     private String name;
     private int taken;
     private int given;
 
-    public Person(String name){
+    public Person(String name, ArrayList<Person> list){
         this.name = name;
+        list.add(this);
         taken = 0;
         given = 0;
     }
